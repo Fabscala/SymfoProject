@@ -255,3 +255,12 @@ fe9212,127.0.0.1,GET,http://localhost:8000/css/bootstrap.min.css.map,1485886980,
 2fa77d,127.0.0.1,GET,http://localhost:8000/films,1485887118,,200
 bdc918,127.0.0.1,GET,http://localhost:8000/css/bootstrap.min.css.map,1485887120,7e2186,200
 7e2186,127.0.0.1,GET,http://localhost:8000/css/bootstrap.min.css.map,1485887120,,404
+c33d7a,127.0.0.1,GET,http://localhost:8000/films,1485887197,,200
+2945fa,127.0.0.1,GET,http://localhost:8000/css/bootstrap.min.css.map,1485887198,6e0d62,200
+6e0d62,127.0.0.1,GET,http://localhost:8000/css/bootstrap.min.css.map,1485887198,,404
+3c5862,127.0.0.1,GET,http://localhost:8000/films,1485887328,,200
+914fbf,127.0.0.1,GET,http://localhost:8000/css/bootstrap.min.css.map,1485887329,6ea175,200
+6ea175,127.0.0.1,GET,http://localhost:8000/css/bootstrap.min.css.map,1485887329,,404
+4d3af8,127.0.0.1,GET,http://localhost:8000/films,1485887411,,200
+8eddc2,127.0.0.1,GET,http://localhost:8000/css/bootstrap.min.css.map,1485887412,2e9882,200
+2e9882,127.0.0.1,GET,http://localhost:8000/css/bootstrap.min.css.map,1485887412,,404
