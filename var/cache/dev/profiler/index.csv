@@ -16,3 +16,4 @@ add071,127.0.0.1,GET,http://localhost:8000/admin/livres/modif/1,1485848059,6c1e2
 8360f2,127.0.0.1,GET,http://localhost:8000/admin/livres/liste,1485848793,a07bcc,200
 a07bcc,127.0.0.1,GET,http://localhost:8000/admin/livres/liste,1485848793,,404
 0c150e,127.0.0.1,GET,http://localhost:8000/,1485848797,,200
+98678b,127.0.0.1,GET,http://localhost:8000/,1485849760,,200
