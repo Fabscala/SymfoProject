@@ -105,6 +105,37 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
+        // symfoprojectgit_admin_adminbundle_index
+        if (rtrim($pathinfo, '/') === '') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'symfoprojectgit_admin_adminbundle_index');
+            }
+
+            return array (  '_controller' => 'SymfoProjectGit\\AdminBundle\\Controller\\AdminBundleController::indexAction',  '_route' => 'symfoprojectgit_admin_adminbundle_index',);
+        }
+
+        // symfoprojectgit_cinema_cinemabundle_index
+        if (rtrim($pathinfo, '/') === '') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'symfoprojectgit_cinema_cinemabundle_index');
+            }
+
+            return array (  '_controller' => 'SymfoProjectGit\\CinemaBundle\\Controller\\CinemaBundleController::indexAction',  '_route' => 'symfoprojectgit_cinema_cinemabundle_index',);
+        }
+
+        if (0 === strpos($pathinfo, '/film')) {
+            // symfoprojectgit_cinema_cinemabundle_list
+            if ($pathinfo === '/film') {
+                return array (  '_controller' => 'SymfoProjectGit\\CinemaBundle\\Controller\\CinemaBundleController::listAction',  '_route' => 'symfoprojectgit_cinema_cinemabundle_list',);
+            }
+
+            // symfoprojectgit_cinema_cinemabundle_show
+            if (preg_match('#^/film/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'symfoprojectgit_cinema_cinemabundle_show')), array (  '_controller' => 'SymfoProjectGit\\CinemaBundle\\Controller\\CinemaBundleController::showAction',));
+            }
+
+        }
+
         // homepage
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {
