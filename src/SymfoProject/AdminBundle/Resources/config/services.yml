@@ -1,0 +1,4 @@
+services:
+#    symfo_project_admin.example:
+#        class: SymfoProject\AdminBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
