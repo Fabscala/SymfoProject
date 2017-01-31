@@ -1,3 +1,13 @@
+symfo_project_git_admin:
+    resource: "@SymfoProjectGitAdminBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+symfo_project_git_cinema:
+    resource: "@SymfoProjectGitCinemaBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation

@@ -1,0 +1,4 @@
+services:
+#    symfo_project_git_cinema.example:
+#        class: SymfoProjectGit\CinemaBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
