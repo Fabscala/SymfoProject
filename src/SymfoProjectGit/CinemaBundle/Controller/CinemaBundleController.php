@@ -7,8 +7,9 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
 class CinemaBundleController extends Controller
 {
+
     /**
-     * @Route("/")
+     * @Route("/", name="page_accueil")
      */
     public function indexAction()
     {
@@ -16,18 +17,30 @@ class CinemaBundleController extends Controller
     }
 
     /**
-    * @Route("/film")
-    */
+     * @Route("/films", name="page_films")
+     */
     public function listAction()
     {
-        return $this->render('SymfoProjectGitCinemaBundle:Film:list.html.twig');
+        $films = $this->getDoctrine()->getRepository('SymfoProjectGitCinemaBundle:Film')->findAll();
+
+        $titre_de_la_page = 'Films de la bibliothèques';
+
+        return $this->render(
+            'SymfoProjectGitCinemaBundle:Film:list.html.twig',
+            ['films' => $films, 'titre' => $titre_de_la_page]
+        );
     }
 
     /**
-    * @Route("/film/{id}", requirements={"id": "\d+"})
-    */
+     * @Route("/film/{id}", requirements={"id": "\d+"}, name="page_film")
+     */
     public function showAction($id)
     {
-        return $this->render('SymfoProjectGitCinemaBundle:Film:show.html.twig');
+        $livre = $this->getDoctrine()->getRepository('SymfoProjectGitCinemaBundle:Film')->find($id);
+
+        return $this->render(
+            'SymfoProjectGitCinemaBundle:Film:show.html.twig',
+            ['film' => $film]
+        );
     }
 }

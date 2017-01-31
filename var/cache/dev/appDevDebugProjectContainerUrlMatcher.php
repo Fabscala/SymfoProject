@@ -114,24 +114,24 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'SymfoProjectGit\\AdminBundle\\Controller\\AdminBundleController::indexAction',  '_route' => 'symfoprojectgit_admin_adminbundle_index',);
         }
 
-        // symfoprojectgit_cinema_cinemabundle_index
+        // page_accueil
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'symfoprojectgit_cinema_cinemabundle_index');
+                return $this->redirect($pathinfo.'/', 'page_accueil');
             }
 
-            return array (  '_controller' => 'SymfoProjectGit\\CinemaBundle\\Controller\\CinemaBundleController::indexAction',  '_route' => 'symfoprojectgit_cinema_cinemabundle_index',);
+            return array (  '_controller' => 'SymfoProjectGit\\CinemaBundle\\Controller\\CinemaBundleController::indexAction',  '_route' => 'page_accueil',);
         }
 
         if (0 === strpos($pathinfo, '/film')) {
-            // symfoprojectgit_cinema_cinemabundle_list
-            if ($pathinfo === '/film') {
-                return array (  '_controller' => 'SymfoProjectGit\\CinemaBundle\\Controller\\CinemaBundleController::listAction',  '_route' => 'symfoprojectgit_cinema_cinemabundle_list',);
+            // page_films
+            if ($pathinfo === '/films') {
+                return array (  '_controller' => 'SymfoProjectGit\\CinemaBundle\\Controller\\CinemaBundleController::listAction',  '_route' => 'page_films',);
             }
 
-            // symfoprojectgit_cinema_cinemabundle_show
+            // page_film
             if (preg_match('#^/film/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'symfoprojectgit_cinema_cinemabundle_show')), array (  '_controller' => 'SymfoProjectGit\\CinemaBundle\\Controller\\CinemaBundleController::showAction',));
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'page_film')), array (  '_controller' => 'SymfoProjectGit\\CinemaBundle\\Controller\\CinemaBundleController::showAction',));
             }
 
         }
