@@ -1,4 +1,0 @@
-services:
-#    symfo_project_cinema.example:
-#        class: SymfoProject\CinemaBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
