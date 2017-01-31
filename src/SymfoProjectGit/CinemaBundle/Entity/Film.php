@@ -40,23 +40,21 @@ class Film
      *
      * @ORM\Column(name="date_de_sortiie", type="string", length=255)
      */
-    private $dateDeSortiie;
+    private $dateDeSortie;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="id_real", type="integer")
-     * @ORM\Id
+     * @ORM\ManyToOne(targetEntity="Realisateur", inversedBy="sonnom")
      */
-    private $idReal;
+    private $realisateur;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="id_genre", type="integer")
-     * @ORM\Id
+     * @ORM\ManyToOne(targetEntity="Genre", inversedBy="film")
      */
-    private $idGenre;
+    private $genre;
 
 
     /**

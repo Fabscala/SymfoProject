@@ -42,6 +42,11 @@ class Realisateur
      */
     private $dateDeNaissance;
 
+    /**
+    * @ORM\OneToMany(targetEntity="Film", mappedBy="sonnom")
+    */
+    private $sonnom;
+
 
     /**
      * Get id
