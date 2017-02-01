@@ -4,6 +4,8 @@ namespace SymfoProjectGit\CinemaBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class CinemaBundleController extends Controller
 {
@@ -40,7 +42,7 @@ class CinemaBundleController extends Controller
 
         return $this->render(
             'SymfoProjectGitCinemaBundle:Film:show.html.twig',
-            ['film' => $film]
+            ['film' => $film ]
         );
     }
 }

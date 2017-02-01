@@ -40,7 +40,7 @@ class Film
      *
      * @ORM\Column(name="date_de_sortiie", type="string", length=255)
      */
-    private $date_de_sortie;
+    private $date_de_sortiie;
 
     /**
      * @var string
