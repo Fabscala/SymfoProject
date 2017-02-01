@@ -105,13 +105,53 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
-        // symfoprojectgit_admin_adminbundle_index
-        if (rtrim($pathinfo, '/') === '') {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'symfoprojectgit_admin_adminbundle_index');
+        if (0 === strpos($pathinfo, '/admin')) {
+            if (0 === strpos($pathinfo, '/admin/films')) {
+                // admin_film_ajout
+                if ($pathinfo === '/admin/films/ajout') {
+                    return array (  '_controller' => 'SymfoProjectGit\\AdminBundle\\Controller\\AdminFilmController::addAction',  '_route' => 'admin_film_ajout',);
+                }
+
+                // admin_film_liste
+                if ($pathinfo === '/admin/films/liste') {
+                    return array (  '_controller' => 'SymfoProjectGit\\AdminBundle\\Controller\\AdminFilmController::listAction',  '_route' => 'admin_film_liste',);
+                }
+
+                // admin_film_modif
+                if (0 === strpos($pathinfo, '/admin/films/modif') && preg_match('#^/admin/films/modif/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_film_modif')), array (  '_controller' => 'SymfoProjectGit\\AdminBundle\\Controller\\AdminFilmController::editAction',));
+                }
+
+                // admin_film_supprimer
+                if (0 === strpos($pathinfo, '/admin/films/supprimer') && preg_match('#^/admin/films/supprimer/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_film_supprimer')), array (  '_controller' => 'SymfoProjectGit\\AdminBundle\\Controller\\AdminFilmController::deleteAction',));
+                }
+
             }
 
-            return array (  '_controller' => 'SymfoProjectGit\\AdminBundle\\Controller\\AdminBundleController::indexAction',  '_route' => 'symfoprojectgit_admin_adminbundle_index',);
+            if (0 === strpos($pathinfo, '/admin/genres')) {
+                // admin_genre_ajout
+                if ($pathinfo === '/admin/genres/ajout') {
+                    return array (  '_controller' => 'SymfoProjectGit\\AdminBundle\\Controller\\AdminGenreController::addAction',  '_route' => 'admin_genre_ajout',);
+                }
+
+                // admin_genre_liste
+                if ($pathinfo === '/admin/genres/liste') {
+                    return array (  '_controller' => 'SymfoProjectGit\\AdminBundle\\Controller\\AdminGenreController::listAction',  '_route' => 'admin_genre_liste',);
+                }
+
+                // admin_genre_modif
+                if (0 === strpos($pathinfo, '/admin/genres/modif') && preg_match('#^/admin/genres/modif/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_genre_modif')), array (  '_controller' => 'SymfoProjectGit\\AdminBundle\\Controller\\AdminGenreController::editAction',));
+                }
+
+                // admin_genre_supprimer
+                if (0 === strpos($pathinfo, '/admin/genres/supprimer') && preg_match('#^/admin/genres/supprimer/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_genre_supprimer')), array (  '_controller' => 'SymfoProjectGit\\AdminBundle\\Controller\\AdminGenreController::deleteAction',));
+                }
+
+            }
+
         }
 
         // page_accueil

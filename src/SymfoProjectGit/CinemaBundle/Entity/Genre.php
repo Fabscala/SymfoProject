@@ -29,9 +29,17 @@ class Genre
     private $nom;
 
     /**
-    * @ORM\OneToMany(targetEntity="Film", mappedBy="film")
+    * @ORM\OneToMany(targetEntity="Film", mappedBy="films")
     */
     private $film;
+
+
+    /**
+    * Lorsqu'on appelle $film.genre dans TWIG
+    */
+    public function __toString(){
+        return $this->nom;
+    }
 
 
     /**

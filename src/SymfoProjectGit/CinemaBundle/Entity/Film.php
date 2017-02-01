@@ -31,7 +31,7 @@ class Film
     /**
      * @var string
      *
-     * @ORM\Column(name="synopsis", type="string", length=255)
+     * @ORM\Column(name="synopsis", type="text", length=16777215)
      */
     private $synopsis;
 
@@ -45,14 +45,14 @@ class Film
     /**
      * @var string
      *
-     * @ORM\ManyToOne(targetEntity="Realisateur", inversedBy="sonnom")
+     * @ORM\ManyToOne(targetEntity="Realisateur", inversedBy="films")
      */
     private $realisateur;
 
     /**
      * @var string
      *
-     * @ORM\ManyToOne(targetEntity="Genre", inversedBy="film")
+     * @ORM\ManyToOne(targetEntity="Genre", inversedBy="films")
      */
     private $genre;
 
@@ -140,51 +140,51 @@ class Film
     }
 
     /**
-     * Set realisateur_id
+     * Set realisateur
      *
-     * @param string $realisateur_id
+     * @param string $realisateur
      *
      * @return Film
      */
-    public function setRealisateur_id($realisateur_id)
+    public function setRealisateur($realisateur)
     {
-        $this->realisateur_id = $realisateur_id;
+        $this->realisateur = $realisateur;
 
         return $this;
     }
 
     /**
-     * Get realisateur_id
+     * Get realisateur
      *
      * @return string
      */
-    public function getRealisateur_id()
+    public function getRealisateur()
     {
-        return $this->realisateur_id;
+        return $this->realisateur;
     }
 
     /**
-     * Set idGenre
+     * Set genre
      *
-     * @param string $idGenre
+     * @param string $genre
      *
      * @return Film
      */
-    public function setIdGenre($idGenre)
+    public function setGenre($genre)
     {
-        $this->idGenre = $idGenre;
+        $this->genre = $genre;
 
         return $this;
     }
 
     /**
-     * Get idGenre
+     * Get genre
      *
      * @return string
      */
-    public function getIdGenre()
+    public function getGenre()
     {
-        return $this->idGenre;
+        return $this->genre;
     }
 }
 

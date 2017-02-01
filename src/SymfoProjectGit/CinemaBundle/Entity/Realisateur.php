@@ -43,10 +43,16 @@ class Realisateur
     private $dateDeNaissance;
 
     /**
-    * @ORM\OneToMany(targetEntity="Film", mappedBy="sonnom")
+    * @ORM\OneToMany(targetEntity="Film", mappedBy="realisateur")
     */
-    private $sonnom;
+    private $films;
 
+    /**
+    * Lorsqu'on appelle $film.realisateur dans TWIG
+    */
+    public function __toString(){
+        return $this->prenom.' '.$this->nom;
+    }
 
     /**
      * Get id

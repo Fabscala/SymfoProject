@@ -45,4 +45,6 @@ class CinemaBundleController extends Controller
             ['film' => $film ]
         );
     }
+
+
 }
