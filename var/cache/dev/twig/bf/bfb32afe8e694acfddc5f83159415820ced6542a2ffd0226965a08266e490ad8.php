@@ -21,29 +21,29 @@ class __TwigTemplate_5eb288c4b631a670fccca2e18bc04ab2bc1b76dbcc3e8a4c8f7b29a4e30
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_11d64a86854ea1d414fddc8011ac12e66cb1da5aa76a4c9c5da0f8a207cd53fb = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_11d64a86854ea1d414fddc8011ac12e66cb1da5aa76a4c9c5da0f8a207cd53fb->enter($__internal_11d64a86854ea1d414fddc8011ac12e66cb1da5aa76a4c9c5da0f8a207cd53fb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SymfoProjectGitCinemaBundle:Realisateur:list.html.twig"));
+        $__internal_a9292fedf47c86af5ab9a9fea2c3f40b1418d5710e2c7126da3688cd1cc641db = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_a9292fedf47c86af5ab9a9fea2c3f40b1418d5710e2c7126da3688cd1cc641db->enter($__internal_a9292fedf47c86af5ab9a9fea2c3f40b1418d5710e2c7126da3688cd1cc641db_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SymfoProjectGitCinemaBundle:Realisateur:list.html.twig"));
 
-        $__internal_76a9fd71b961c55af03d19f739977a6d40980614bc77e0b97ae8ab3b56196f85 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_76a9fd71b961c55af03d19f739977a6d40980614bc77e0b97ae8ab3b56196f85->enter($__internal_76a9fd71b961c55af03d19f739977a6d40980614bc77e0b97ae8ab3b56196f85_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SymfoProjectGitCinemaBundle:Realisateur:list.html.twig"));
+        $__internal_ccd76ed38dd51736bd961e366103130c0cf74216e817bbbd122b00162e78d25e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_ccd76ed38dd51736bd961e366103130c0cf74216e817bbbd122b00162e78d25e->enter($__internal_ccd76ed38dd51736bd961e366103130c0cf74216e817bbbd122b00162e78d25e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SymfoProjectGitCinemaBundle:Realisateur:list.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_11d64a86854ea1d414fddc8011ac12e66cb1da5aa76a4c9c5da0f8a207cd53fb->leave($__internal_11d64a86854ea1d414fddc8011ac12e66cb1da5aa76a4c9c5da0f8a207cd53fb_prof);
+        $__internal_a9292fedf47c86af5ab9a9fea2c3f40b1418d5710e2c7126da3688cd1cc641db->leave($__internal_a9292fedf47c86af5ab9a9fea2c3f40b1418d5710e2c7126da3688cd1cc641db_prof);
 
         
-        $__internal_76a9fd71b961c55af03d19f739977a6d40980614bc77e0b97ae8ab3b56196f85->leave($__internal_76a9fd71b961c55af03d19f739977a6d40980614bc77e0b97ae8ab3b56196f85_prof);
+        $__internal_ccd76ed38dd51736bd961e366103130c0cf74216e817bbbd122b00162e78d25e->leave($__internal_ccd76ed38dd51736bd961e366103130c0cf74216e817bbbd122b00162e78d25e_prof);
 
     }
 
     // line 4
     public function block_body($context, array $blocks = array())
     {
-        $__internal_c12673b82341b134c4983ba2f0da0e82cfe485dd931354f0774d4fd94e771def = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_c12673b82341b134c4983ba2f0da0e82cfe485dd931354f0774d4fd94e771def->enter($__internal_c12673b82341b134c4983ba2f0da0e82cfe485dd931354f0774d4fd94e771def_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_47908d2768373e41916e30742892ef43d7db57dca60a45ec7ac1c39616ef34ee = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_47908d2768373e41916e30742892ef43d7db57dca60a45ec7ac1c39616ef34ee->enter($__internal_47908d2768373e41916e30742892ef43d7db57dca60a45ec7ac1c39616ef34ee_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_395f87ef5fd1b5584d82ebd804689aa471490c1f213041b9026a3e93f15133cd = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_395f87ef5fd1b5584d82ebd804689aa471490c1f213041b9026a3e93f15133cd->enter($__internal_395f87ef5fd1b5584d82ebd804689aa471490c1f213041b9026a3e93f15133cd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_1a2573b785e7b6f707ffc5cbae2d62802536427294d2c87fd74a61ca706931c9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1a2573b785e7b6f707ffc5cbae2d62802536427294d2c87fd74a61ca706931c9->enter($__internal_1a2573b785e7b6f707ffc5cbae2d62802536427294d2c87fd74a61ca706931c9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 5
         echo "            <div class=\"row\">
@@ -57,7 +57,7 @@ class __TwigTemplate_5eb288c4b631a670fccca2e18bc04ab2bc1b76dbcc3e8a4c8f7b29a4e30
                         <a href=\"";
         // line 10
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("page_realisateurs");
-        echo "\" class=\"list-group-item\">Réalisateurs</a>
+        echo "\" class=\"list-group-item active\">Réalisateurs</a>
                     </div>
                 </div>
                 <h2>Liste des réalisateurs</h2>
@@ -103,10 +103,10 @@ class __TwigTemplate_5eb288c4b631a670fccca2e18bc04ab2bc1b76dbcc3e8a4c8f7b29a4e30
 
         ";
         
-        $__internal_395f87ef5fd1b5584d82ebd804689aa471490c1f213041b9026a3e93f15133cd->leave($__internal_395f87ef5fd1b5584d82ebd804689aa471490c1f213041b9026a3e93f15133cd_prof);
+        $__internal_1a2573b785e7b6f707ffc5cbae2d62802536427294d2c87fd74a61ca706931c9->leave($__internal_1a2573b785e7b6f707ffc5cbae2d62802536427294d2c87fd74a61ca706931c9_prof);
 
         
-        $__internal_c12673b82341b134c4983ba2f0da0e82cfe485dd931354f0774d4fd94e771def->leave($__internal_c12673b82341b134c4983ba2f0da0e82cfe485dd931354f0774d4fd94e771def_prof);
+        $__internal_47908d2768373e41916e30742892ef43d7db57dca60a45ec7ac1c39616ef34ee->leave($__internal_47908d2768373e41916e30742892ef43d7db57dca60a45ec7ac1c39616ef34ee_prof);
 
     }
 
@@ -144,7 +144,7 @@ class __TwigTemplate_5eb288c4b631a670fccca2e18bc04ab2bc1b76dbcc3e8a4c8f7b29a4e30
                     <p class=\"lead\">Cinéma</p>
                     <div class=\"list-group\">
                         <a href=\"{{ path('page_films')}}\" class=\"list-group-item\">Films</a>
-                        <a href=\"{{ path('page_realisateurs')}}\" class=\"list-group-item\">Réalisateurs</a>
+                        <a href=\"{{ path('page_realisateurs')}}\" class=\"list-group-item active\">Réalisateurs</a>
                     </div>
                 </div>
                 <h2>Liste des réalisateurs</h2>
