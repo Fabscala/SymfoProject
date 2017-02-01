@@ -1,0 +1,14 @@
+{% extends 'SymfoProjectGitCinemaBundle:Realisateur:layout.html.twig' %}
+
+
+        {% block body %}
+            <div class="row">
+                <div class="col-md-3">
+                    <p class="lead">Cinéma</p>
+                    <div class="list-group">
+                        <a href="{{ path('page_films')}}" class="list-group-item">Films</a>
+                        <a href="{{ path('page_realisateurs')}}" class="list-group-item">Réalisateurs</a>
+                    </div>
+                </div>
+
+        {% endblock %}

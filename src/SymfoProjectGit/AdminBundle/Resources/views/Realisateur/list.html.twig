@@ -1,0 +1,13 @@
+{% extends 'SymfoProjectGitCinemaBundle:Film:layout.html.twig' %}
+{% block body %}
+<h1>Liste des realisateurs :</h1>
+<ul>
+    {% for realisateur in realisateurs %}
+        <li>
+            <a href="{{ path('admin_realisateur_modif', {'id': realisateur.id}) }}">{{ realisateur.nom }}</a>
+            <a href="{{ path('admin_realisateur_supprimer', {'id': realisateur.id}) }}">(x)</a>
+        </li>
+    {% endfor %}
+</ul>
+<a href="{{ path('admin_realisateur_ajout') }}">Ajouter</a>
+{% endblock %}

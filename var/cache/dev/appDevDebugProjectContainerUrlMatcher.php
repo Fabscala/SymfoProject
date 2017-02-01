@@ -152,15 +152,29 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
             }
 
-        }
+            if (0 === strpos($pathinfo, '/admin/realisateurs')) {
+                // admin_realisateur_ajout
+                if ($pathinfo === '/admin/realisateurs/ajout') {
+                    return array (  '_controller' => 'SymfoProjectGit\\AdminBundle\\Controller\\AdminRealisateurController::addAction',  '_route' => 'admin_realisateur_ajout',);
+                }
 
-        // page_accueil
-        if (rtrim($pathinfo, '/') === '') {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'page_accueil');
+                // admin_realisateur_liste
+                if ($pathinfo === '/admin/realisateurs/liste') {
+                    return array (  '_controller' => 'SymfoProjectGit\\AdminBundle\\Controller\\AdminRealisateurController::listAction',  '_route' => 'admin_realisateur_liste',);
+                }
+
+                // admin_realisateur_modif
+                if (0 === strpos($pathinfo, '/admin/realisateurs/modif') && preg_match('#^/admin/realisateurs/modif/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_realisateur_modif')), array (  '_controller' => 'SymfoProjectGit\\AdminBundle\\Controller\\AdminRealisateurController::editAction',));
+                }
+
+                // admin_realisateur_supprimer
+                if (0 === strpos($pathinfo, '/admin/realisateurs/supprimer') && preg_match('#^/admin/realisateurs/supprimer/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_realisateur_supprimer')), array (  '_controller' => 'SymfoProjectGit\\AdminBundle\\Controller\\AdminRealisateurController::deleteAction',));
+                }
+
             }
 
-            return array (  '_controller' => 'SymfoProjectGit\\CinemaBundle\\Controller\\CinemaBundleController::indexAction',  '_route' => 'page_accueil',);
         }
 
         if (0 === strpos($pathinfo, '/film')) {
@@ -172,6 +186,28 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             // page_film
             if (preg_match('#^/film/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'page_film')), array (  '_controller' => 'SymfoProjectGit\\CinemaBundle\\Controller\\CinemaBundleController::showAction',));
+            }
+
+        }
+
+        // page_accueil
+        if (rtrim($pathinfo, '/') === '') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'page_accueil');
+            }
+
+            return array (  '_controller' => 'SymfoProjectGit\\CinemaBundle\\Controller\\CinemaRealisateurController::indexAction',  '_route' => 'page_accueil',);
+        }
+
+        if (0 === strpos($pathinfo, '/realisateur')) {
+            // page_realisateurs
+            if ($pathinfo === '/realisateurs') {
+                return array (  '_controller' => 'SymfoProjectGit\\CinemaBundle\\Controller\\CinemaRealisateurController::listAction',  '_route' => 'page_realisateurs',);
+            }
+
+            // page_realisateur
+            if (preg_match('#^/realisateur/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'page_realisateur')), array (  '_controller' => 'SymfoProjectGit\\CinemaBundle\\Controller\\CinemaRealisateurController::showAction',));
             }
 
         }

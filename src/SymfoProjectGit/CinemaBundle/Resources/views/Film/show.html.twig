@@ -1,0 +1,16 @@
+{% extends 'SymfoProjectGitCinemaBundle:Film:layout.html.twig' %}
+
+
+        {% block body %}
+<h1>{{ film.titre }}</h1>
+
+<span>Ecrit par {{ film.realisateur }}</span>
+<br><br>
+<p>{{ film.synopsis }}</p>
+
+<span>Réalisateur : {{ film.realisateur }}</span>
+<span class="pull-right">{{ film.genre }}</span>
+
+<br><br>
+<p><a href="{{ path('page_films') }}">Retour</a></p>
+{% endblock %}
