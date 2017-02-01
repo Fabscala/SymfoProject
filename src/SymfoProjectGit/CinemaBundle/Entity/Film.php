@@ -38,9 +38,9 @@ class Film
     /**
      * @var string
      *
-     * @ORM\Column(name="date_de_sortiie", type="string", length=255)
+     * @ORM\Column(name="date", type="string", length=255)
      */
-    private $date_de_sortiie;
+    private $date;
 
     /**
      * @var string
@@ -122,45 +122,45 @@ class Film
      *
      * @return Film
      */
-    public function setDateDeSortiie($dateDeSortiie)
+    public function date($date)
     {
-        $this->dateDeSortiie = $dateDeSortiie;
+        $this->date = $date;
 
         return $this;
     }
 
     /**
-     * Get dateDeSortiie
+     * Get date
      *
      * @return string
      */
-    public function getDateDeSortiie()
+    public function getDate()
     {
-        return $this->dateDeSortiie;
+        return $this->date;
     }
 
     /**
-     * Set idReal
+     * Set realisateur_id
      *
-     * @param string $idReal
+     * @param string $realisateur_id
      *
      * @return Film
      */
-    public function setIdReal($idReal)
+    public function setRealisateur_id($realisateur_id)
     {
-        $this->idReal = $idReal;
+        $this->realisateur_id = $realisateur_id;
 
         return $this;
     }
 
     /**
-     * Get idReal
+     * Get realisateur_id
      *
      * @return string
      */
-    public function getIdReal()
+    public function getRealisateur_id()
     {
-        return $this->idReal;
+        return $this->realisateur_id;
     }
 
     /**

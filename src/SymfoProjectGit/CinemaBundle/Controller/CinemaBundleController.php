@@ -24,7 +24,7 @@ class CinemaBundleController extends Controller
     public function listAction()
     {
         $films = $this->getDoctrine()->getRepository('SymfoProjectGitCinemaBundle:Film')->findAll();
-
+        $realisateur = $this->getDoctrine()->getRepository('SymfoProjectGitCinemaBundle:Realisateur')->findAll();
         $titre_de_la_page = 'Films de la bibliothèques';
 
         return $this->render(

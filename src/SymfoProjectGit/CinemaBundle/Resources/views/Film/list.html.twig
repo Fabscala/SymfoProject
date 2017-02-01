@@ -23,8 +23,8 @@
                             <p>{{ film.synopsis }}</p>
                         </div>
                         <div class="ratings">
-                            <p class="pull-right">sorti le :{{ film.titre }}</p>
-                            <p>Réalisé par : <a href="">{{ film.titre }}</a></p>
+                            <p>Date de sortie : <a href="">{{ film.getDate() }}</a></p>
+                            <p>Réalisé par : <a href="">{{ film.realisateur_id() }}</a></p>
                         </div>
                     </div>
                 </div>
