@@ -36,6 +36,13 @@ class Realisateur
     private $prenom;
 
     /**
+    * @var string
+    *
+    * @ORM\Column(name="description", type="string", length=255)
+    */
+    private $description;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="date_de_naissance", type="string", length=255)
@@ -110,6 +117,30 @@ class Realisateur
     public function getPrenom()
     {
         return $this->prenom;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     *
+     * @return Realisateur
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
     }
 
     /**

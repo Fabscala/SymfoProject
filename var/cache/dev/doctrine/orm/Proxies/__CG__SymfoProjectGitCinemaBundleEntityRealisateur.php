@@ -64,10 +64,10 @@ class Realisateur extends \SymfoProjectGit\CinemaBundle\Entity\Realisateur imple
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'id', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'nom', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'prenom', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'dateDeNaissance', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'films'];
+            return ['__isInitialized__', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'id', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'nom', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'prenom', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'description', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'dateDeNaissance', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'films'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'id', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'nom', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'prenom', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'dateDeNaissance', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'films'];
+        return ['__isInitialized__', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'id', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'nom', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'prenom', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'description', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'dateDeNaissance', '' . "\0" . 'SymfoProjectGit\\CinemaBundle\\Entity\\Realisateur' . "\0" . 'films'];
     }
 
     /**
@@ -241,6 +241,28 @@ class Realisateur extends \SymfoProjectGit\CinemaBundle\Entity\Realisateur imple
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPrenom', []);
 
         return parent::getPrenom();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setDescription($description)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setDescription', [$description]);
+
+        return parent::setDescription($description);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getDescription()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getDescription', []);
+
+        return parent::getDescription();
     }
 
     /**

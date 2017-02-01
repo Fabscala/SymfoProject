@@ -10,5 +10,24 @@
                         <a href="{{ path('page_realisateurs')}}" class="list-group-item">Réalisateurs</a>
                     </div>
                 </div>
+                <h2>Liste des réalisateurs</h2>
+				
+                <div class="col-md-9">
+			    {% for realisateur in realisateurs %}
+
+				<br />
+			
+				<div class="well">
+                            <strong>{{ realisateur.nom }} {{ realisateur.prenom }}</strong>               
+                            <br>Date de Naissance : {{ realisateur.dateDeNaissance }}<br />
+							<br />
+							<p>{{ realisateur.description }}</p>
+							<hr />
+							<div class="text-right">
+								<a href="" class="btn btn-success">Voir ses films</a>
+							</div>
+						</div>
+						    {% endfor %}
+
 
         {% endblock %}

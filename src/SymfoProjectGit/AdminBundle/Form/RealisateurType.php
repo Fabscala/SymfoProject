@@ -14,6 +14,7 @@ class RealisateurType extends AbstractType
         $builder
             ->add('nom')
             ->add('prenom')
+            ->add('description')
             ->add('date_de_naissance')
             ->add('save', SubmitType::class, array('label' => 'Enregistrer'))
         ;
