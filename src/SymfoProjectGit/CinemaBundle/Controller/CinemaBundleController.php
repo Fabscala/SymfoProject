@@ -38,12 +38,12 @@ class CinemaBundleController extends Controller
      */
     public function showAction($id)
     {
-        $films = $this->getDoctrine()->getRepository('SymfoProjectGitCinemaBundle:Film')->findAll();
+        $film = $this->getDoctrine()->getRepository('SymfoProjectGitCinemaBundle:Film')->find($id);
         $realisateur = $this->getDoctrine()->getRepository('SymfoProjectGitCinemaBundle:Realisateur')->find($id);
 
         return $this->render(
             'SymfoProjectGitCinemaBundle:Film:show.html.twig',
-            ['film' => $film ]
+            ['film' => $film]
         );
     }
 
