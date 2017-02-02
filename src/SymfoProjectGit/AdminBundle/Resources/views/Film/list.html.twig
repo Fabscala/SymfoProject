@@ -3,10 +3,12 @@
 <h1>Liste des films :</h1>
 <ul>
     {% for film in films %}
+    <div class ="well">
         <li>
-            <a href="{{ path('admin_film_modif', {'id': film.id}) }}">{{ film.titre }}</a>
-            <a href="{{ path('admin_film_supprimer', {'id': film.id}) }}">(x)</a>
+            <strong><a href="{{ path('admin_film_modif', {'id': film.id}) }}">{{ film.titre }}</a><strong>
+            <div class="pull-right"><a href="{{ path('admin_film_supprimer', {'id': film.id}) }}">Supprimer</a></div>
         </li>
+    </div>
     {% endfor %}
 </ul>
 <a href="{{ path('admin_film_ajout') }}">Ajouter</a>

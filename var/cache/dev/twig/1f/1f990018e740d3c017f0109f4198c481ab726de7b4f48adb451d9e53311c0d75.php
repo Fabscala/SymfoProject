@@ -21,29 +21,29 @@ class __TwigTemplate_f49fb53c12434f2984ae578b3b190df343f83ee471845953a1bc3a6e2fe
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_7cca43d80a15e4581bc934505088fb68204897c7adeca5234ad5e352e4cf3736 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_7cca43d80a15e4581bc934505088fb68204897c7adeca5234ad5e352e4cf3736->enter($__internal_7cca43d80a15e4581bc934505088fb68204897c7adeca5234ad5e352e4cf3736_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SymfoProjectGitAdminBundle:Film:list.html.twig"));
+        $__internal_8544ea2a3e072440c4e44dfe7f39c3b29b9e3c240b654cc79d3997b2c5f780a7 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_8544ea2a3e072440c4e44dfe7f39c3b29b9e3c240b654cc79d3997b2c5f780a7->enter($__internal_8544ea2a3e072440c4e44dfe7f39c3b29b9e3c240b654cc79d3997b2c5f780a7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SymfoProjectGitAdminBundle:Film:list.html.twig"));
 
-        $__internal_e4256e05cbe7a30d7b229ad442a0e9c1260405aed208825a2bf2faf77d7afb79 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e4256e05cbe7a30d7b229ad442a0e9c1260405aed208825a2bf2faf77d7afb79->enter($__internal_e4256e05cbe7a30d7b229ad442a0e9c1260405aed208825a2bf2faf77d7afb79_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SymfoProjectGitAdminBundle:Film:list.html.twig"));
+        $__internal_e44407448e5c46afd19b4e5bc07bf7b88fc7e9c6805f0851f2456ee116655515 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e44407448e5c46afd19b4e5bc07bf7b88fc7e9c6805f0851f2456ee116655515->enter($__internal_e44407448e5c46afd19b4e5bc07bf7b88fc7e9c6805f0851f2456ee116655515_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SymfoProjectGitAdminBundle:Film:list.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_7cca43d80a15e4581bc934505088fb68204897c7adeca5234ad5e352e4cf3736->leave($__internal_7cca43d80a15e4581bc934505088fb68204897c7adeca5234ad5e352e4cf3736_prof);
+        $__internal_8544ea2a3e072440c4e44dfe7f39c3b29b9e3c240b654cc79d3997b2c5f780a7->leave($__internal_8544ea2a3e072440c4e44dfe7f39c3b29b9e3c240b654cc79d3997b2c5f780a7_prof);
 
         
-        $__internal_e4256e05cbe7a30d7b229ad442a0e9c1260405aed208825a2bf2faf77d7afb79->leave($__internal_e4256e05cbe7a30d7b229ad442a0e9c1260405aed208825a2bf2faf77d7afb79_prof);
+        $__internal_e44407448e5c46afd19b4e5bc07bf7b88fc7e9c6805f0851f2456ee116655515->leave($__internal_e44407448e5c46afd19b4e5bc07bf7b88fc7e9c6805f0851f2456ee116655515_prof);
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
-        $__internal_8e3f008063fc330bcf26869aede2649ef03b2c68470114a4d9e4e5693a231cf8 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_8e3f008063fc330bcf26869aede2649ef03b2c68470114a4d9e4e5693a231cf8->enter($__internal_8e3f008063fc330bcf26869aede2649ef03b2c68470114a4d9e4e5693a231cf8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_fff633ebfecb15245fa11265cd4ff825c5764d7ffdcaf668f931fb2ce690577a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_fff633ebfecb15245fa11265cd4ff825c5764d7ffdcaf668f931fb2ce690577a->enter($__internal_fff633ebfecb15245fa11265cd4ff825c5764d7ffdcaf668f931fb2ce690577a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_f6c187d1b2f9c14edf73f9659171d40112a4c926ce4ef4db920b9f3504d8d5a8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f6c187d1b2f9c14edf73f9659171d40112a4c926ce4ef4db920b9f3504d8d5a8->enter($__internal_f6c187d1b2f9c14edf73f9659171d40112a4c926ce4ef4db920b9f3504d8d5a8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_9fe7b25ac9f8158b301627738de4fde83aca58b848da94418ce87a1467905a39 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_9fe7b25ac9f8158b301627738de4fde83aca58b848da94418ce87a1467905a39->enter($__internal_9fe7b25ac9f8158b301627738de4fde83aca58b848da94418ce87a1467905a39_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
         echo "<h1>Liste des films :</h1>
@@ -54,35 +54,37 @@ class __TwigTemplate_f49fb53c12434f2984ae578b3b190df343f83ee471845953a1bc3a6e2fe
         $context['_seq'] = twig_ensure_traversable((isset($context["films"]) ? $context["films"] : $this->getContext($context, "films")));
         foreach ($context['_seq'] as $context["_key"] => $context["film"]) {
             // line 6
-            echo "        <li>
-            <a href=\"";
-            // line 7
+            echo "    <div class =\"well\">
+        <li>
+            <strong><a href=\"";
+            // line 8
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("admin_film_modif", array("id" => $this->getAttribute($context["film"], "id", array()))), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["film"], "titre", array()), "html", null, true);
-            echo "</a>
-            <a href=\"";
-            // line 8
+            echo "</a><strong>
+            <div class=\"pull-right\"><a href=\"";
+            // line 9
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("admin_film_supprimer", array("id" => $this->getAttribute($context["film"], "id", array()))), "html", null, true);
-            echo "\">(x)</a>
+            echo "\">Supprimer</a></div>
         </li>
+    </div>
     ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['film'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 11
+        // line 13
         echo "</ul>
 <a href=\"";
-        // line 12
+        // line 14
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("admin_film_ajout");
         echo "\">Ajouter</a>
 ";
         
-        $__internal_f6c187d1b2f9c14edf73f9659171d40112a4c926ce4ef4db920b9f3504d8d5a8->leave($__internal_f6c187d1b2f9c14edf73f9659171d40112a4c926ce4ef4db920b9f3504d8d5a8_prof);
+        $__internal_9fe7b25ac9f8158b301627738de4fde83aca58b848da94418ce87a1467905a39->leave($__internal_9fe7b25ac9f8158b301627738de4fde83aca58b848da94418ce87a1467905a39_prof);
 
         
-        $__internal_8e3f008063fc330bcf26869aede2649ef03b2c68470114a4d9e4e5693a231cf8->leave($__internal_8e3f008063fc330bcf26869aede2649ef03b2c68470114a4d9e4e5693a231cf8_prof);
+        $__internal_fff633ebfecb15245fa11265cd4ff825c5764d7ffdcaf668f931fb2ce690577a->leave($__internal_fff633ebfecb15245fa11265cd4ff825c5764d7ffdcaf668f931fb2ce690577a_prof);
 
     }
 
@@ -98,7 +100,7 @@ class __TwigTemplate_f49fb53c12434f2984ae578b3b190df343f83ee471845953a1bc3a6e2fe
 
     public function getDebugInfo()
     {
-        return array (  78 => 12,  75 => 11,  66 => 8,  60 => 7,  57 => 6,  53 => 5,  49 => 3,  40 => 2,  11 => 1,);
+        return array (  80 => 14,  77 => 13,  67 => 9,  61 => 8,  57 => 6,  53 => 5,  49 => 3,  40 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -116,10 +118,12 @@ class __TwigTemplate_f49fb53c12434f2984ae578b3b190df343f83ee471845953a1bc3a6e2fe
 <h1>Liste des films :</h1>
 <ul>
     {% for film in films %}
+    <div class =\"well\">
         <li>
-            <a href=\"{{ path('admin_film_modif', {'id': film.id}) }}\">{{ film.titre }}</a>
-            <a href=\"{{ path('admin_film_supprimer', {'id': film.id}) }}\">(x)</a>
+            <strong><a href=\"{{ path('admin_film_modif', {'id': film.id}) }}\">{{ film.titre }}</a><strong>
+            <div class=\"pull-right\"><a href=\"{{ path('admin_film_supprimer', {'id': film.id}) }}\">Supprimer</a></div>
         </li>
+    </div>
     {% endfor %}
 </ul>
 <a href=\"{{ path('admin_film_ajout') }}\">Ajouter</a>

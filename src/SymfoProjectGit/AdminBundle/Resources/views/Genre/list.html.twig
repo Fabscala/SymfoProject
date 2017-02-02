@@ -1,12 +1,14 @@
 {% extends 'SymfoProjectGitCinemaBundle:Film:layout.html.twig' %}
 {% block body %}
-<h1>Liste des genres :</h1>
+<h1>Liste des genres :</h1> 
 <ul>
 {% for genre in genres %}
+<div class ="well">
     <li>
-        <a href="{{ path('admin_genre_modif', {'id': genre.id}) }}">{{ genre.nom }}</a>
-        <a href="{{ path('admin_genre_supprimer', {'id': genre.id}) }}">(x)</a>
+        <strong><a href="{{ path('admin_genre_modif', {'id': genre.id}) }}">{{ genre.nom }}</a><strong>
+        <div class="pull-right"><a href="{{ path('admin_genre_supprimer', {'id': genre.id}) }}">Supprimer</a></div>
     </li>
+</div>
 {% endfor %}
 </ul>
 <a href="{{ path('admin_genre_ajout') }}">Ajouter</a>

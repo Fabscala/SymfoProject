@@ -21,32 +21,32 @@ class __TwigTemplate_efb31be7712b4549428c5dc7d978cf8dfd9dad12990c1785738f8cc4e36
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f69582bf44ed10b39b63121ca01d6ffeefd93434b42102ca71f60d5c736b2c7c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_f69582bf44ed10b39b63121ca01d6ffeefd93434b42102ca71f60d5c736b2c7c->enter($__internal_f69582bf44ed10b39b63121ca01d6ffeefd93434b42102ca71f60d5c736b2c7c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SymfoProjectGitAdminBundle:Genre:list.html.twig"));
+        $__internal_430d9568f2e44a50b5740e1b56d1ebb0e1de622ad8d0ee447f3e9aaedeebc3ce = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_430d9568f2e44a50b5740e1b56d1ebb0e1de622ad8d0ee447f3e9aaedeebc3ce->enter($__internal_430d9568f2e44a50b5740e1b56d1ebb0e1de622ad8d0ee447f3e9aaedeebc3ce_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SymfoProjectGitAdminBundle:Genre:list.html.twig"));
 
-        $__internal_50bc620b9a2c41416cdc78c746f7c350cd0e3b218152c5ba3981d51943550955 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_50bc620b9a2c41416cdc78c746f7c350cd0e3b218152c5ba3981d51943550955->enter($__internal_50bc620b9a2c41416cdc78c746f7c350cd0e3b218152c5ba3981d51943550955_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SymfoProjectGitAdminBundle:Genre:list.html.twig"));
+        $__internal_084148d24c281c86368062be575073652d648ed3db512264bfd8176d60597dc9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_084148d24c281c86368062be575073652d648ed3db512264bfd8176d60597dc9->enter($__internal_084148d24c281c86368062be575073652d648ed3db512264bfd8176d60597dc9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SymfoProjectGitAdminBundle:Genre:list.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_f69582bf44ed10b39b63121ca01d6ffeefd93434b42102ca71f60d5c736b2c7c->leave($__internal_f69582bf44ed10b39b63121ca01d6ffeefd93434b42102ca71f60d5c736b2c7c_prof);
+        $__internal_430d9568f2e44a50b5740e1b56d1ebb0e1de622ad8d0ee447f3e9aaedeebc3ce->leave($__internal_430d9568f2e44a50b5740e1b56d1ebb0e1de622ad8d0ee447f3e9aaedeebc3ce_prof);
 
         
-        $__internal_50bc620b9a2c41416cdc78c746f7c350cd0e3b218152c5ba3981d51943550955->leave($__internal_50bc620b9a2c41416cdc78c746f7c350cd0e3b218152c5ba3981d51943550955_prof);
+        $__internal_084148d24c281c86368062be575073652d648ed3db512264bfd8176d60597dc9->leave($__internal_084148d24c281c86368062be575073652d648ed3db512264bfd8176d60597dc9_prof);
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
-        $__internal_3ba77a2e14b7c52138968a0f7c7312683eac100010cd7643dfb52aa80b6a9898 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_3ba77a2e14b7c52138968a0f7c7312683eac100010cd7643dfb52aa80b6a9898->enter($__internal_3ba77a2e14b7c52138968a0f7c7312683eac100010cd7643dfb52aa80b6a9898_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_11402c3c75745974f6f8bf38b67727a400b61c1ccdca5ad80390b1cd7cd0181e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_11402c3c75745974f6f8bf38b67727a400b61c1ccdca5ad80390b1cd7cd0181e->enter($__internal_11402c3c75745974f6f8bf38b67727a400b61c1ccdca5ad80390b1cd7cd0181e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_639146dec53a762152a12f8841ab41819755bad4ec849bcdb73f4cb42b7e8198 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_639146dec53a762152a12f8841ab41819755bad4ec849bcdb73f4cb42b7e8198->enter($__internal_639146dec53a762152a12f8841ab41819755bad4ec849bcdb73f4cb42b7e8198_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_0a4b03558d0180c0299643fb2ceba926104962cc6e01f89c20ed13f825300e2e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_0a4b03558d0180c0299643fb2ceba926104962cc6e01f89c20ed13f825300e2e->enter($__internal_0a4b03558d0180c0299643fb2ceba926104962cc6e01f89c20ed13f825300e2e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
-        echo "<h1>Liste des genres :</h1>
+        echo "<h1>Liste des genres :</h1> 
 <ul>
 ";
         // line 5
@@ -54,35 +54,37 @@ class __TwigTemplate_efb31be7712b4549428c5dc7d978cf8dfd9dad12990c1785738f8cc4e36
         $context['_seq'] = twig_ensure_traversable((isset($context["genres"]) ? $context["genres"] : $this->getContext($context, "genres")));
         foreach ($context['_seq'] as $context["_key"] => $context["genre"]) {
             // line 6
-            echo "    <li>
-        <a href=\"";
-            // line 7
+            echo "<div class =\"well\">
+    <li>
+        <strong><a href=\"";
+            // line 8
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("admin_genre_modif", array("id" => $this->getAttribute($context["genre"], "id", array()))), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["genre"], "nom", array()), "html", null, true);
-            echo "</a>
-        <a href=\"";
-            // line 8
+            echo "</a><strong>
+        <div class=\"pull-right\"><a href=\"";
+            // line 9
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("admin_genre_supprimer", array("id" => $this->getAttribute($context["genre"], "id", array()))), "html", null, true);
-            echo "\">(x)</a>
+            echo "\">Supprimer</a></div>
     </li>
+</div>
 ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['genre'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 11
+        // line 13
         echo "</ul>
 <a href=\"";
-        // line 12
+        // line 14
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("admin_genre_ajout");
         echo "\">Ajouter</a>
 ";
         
-        $__internal_639146dec53a762152a12f8841ab41819755bad4ec849bcdb73f4cb42b7e8198->leave($__internal_639146dec53a762152a12f8841ab41819755bad4ec849bcdb73f4cb42b7e8198_prof);
+        $__internal_0a4b03558d0180c0299643fb2ceba926104962cc6e01f89c20ed13f825300e2e->leave($__internal_0a4b03558d0180c0299643fb2ceba926104962cc6e01f89c20ed13f825300e2e_prof);
 
         
-        $__internal_3ba77a2e14b7c52138968a0f7c7312683eac100010cd7643dfb52aa80b6a9898->leave($__internal_3ba77a2e14b7c52138968a0f7c7312683eac100010cd7643dfb52aa80b6a9898_prof);
+        $__internal_11402c3c75745974f6f8bf38b67727a400b61c1ccdca5ad80390b1cd7cd0181e->leave($__internal_11402c3c75745974f6f8bf38b67727a400b61c1ccdca5ad80390b1cd7cd0181e_prof);
 
     }
 
@@ -98,7 +100,7 @@ class __TwigTemplate_efb31be7712b4549428c5dc7d978cf8dfd9dad12990c1785738f8cc4e36
 
     public function getDebugInfo()
     {
-        return array (  78 => 12,  75 => 11,  66 => 8,  60 => 7,  57 => 6,  53 => 5,  49 => 3,  40 => 2,  11 => 1,);
+        return array (  80 => 14,  77 => 13,  67 => 9,  61 => 8,  57 => 6,  53 => 5,  49 => 3,  40 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -113,16 +115,19 @@ class __TwigTemplate_efb31be7712b4549428c5dc7d978cf8dfd9dad12990c1785738f8cc4e36
     {
         return new Twig_Source("{% extends 'SymfoProjectGitCinemaBundle:Film:layout.html.twig' %}
 {% block body %}
-<h1>Liste des genres :</h1>
+<h1>Liste des genres :</h1> 
 <ul>
 {% for genre in genres %}
+<div class =\"well\">
     <li>
-        <a href=\"{{ path('admin_genre_modif', {'id': genre.id}) }}\">{{ genre.nom }}</a>
-        <a href=\"{{ path('admin_genre_supprimer', {'id': genre.id}) }}\">(x)</a>
+        <strong><a href=\"{{ path('admin_genre_modif', {'id': genre.id}) }}\">{{ genre.nom }}</a><strong>
+        <div class=\"pull-right\"><a href=\"{{ path('admin_genre_supprimer', {'id': genre.id}) }}\">Supprimer</a></div>
     </li>
+</div>
 {% endfor %}
 </ul>
 <a href=\"{{ path('admin_genre_ajout') }}\">Ajouter</a>
-{% endblock %}", "SymfoProjectGitAdminBundle:Genre:list.html.twig", "/Applications/MAMP/htdocs/SymfoProjectGit/src/SymfoProjectGit/AdminBundle/Resources/views/Genre/list.html.twig");
+{% endblock %}
+", "SymfoProjectGitAdminBundle:Genre:list.html.twig", "/Applications/MAMP/htdocs/SymfoProjectGit/src/SymfoProjectGit/AdminBundle/Resources/views/Genre/list.html.twig");
     }
 }
