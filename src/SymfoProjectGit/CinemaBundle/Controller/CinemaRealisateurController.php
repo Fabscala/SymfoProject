@@ -38,11 +38,11 @@ class CinemaRealisateurController extends Controller
     public function showAction($id)
     {
         $film = $this->getDoctrine()->getRepository('SymfoProjectGitCinemaBundle:Realisateur')->find($id);
-        
+     $realisateurs = $this->getDoctrine()->getRepository('SymfoProjectGitCinemaBundle:Realisateur')->find($id);      
 
         return $this->render(
             'SymfoProjectGitCinemaBundle:Realisateur:show.html.twig',
-            ['realisateur' => $realisateur ]
+            ['realisateurs' => $realisateurs ]
         );
     }
 

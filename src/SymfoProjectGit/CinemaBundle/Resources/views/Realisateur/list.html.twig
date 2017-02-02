@@ -18,13 +18,13 @@
 				<br />
 			
 				<div class="well">
-                            <strong>{{ realisateur.nom }} {{ realisateur.prenom }}</strong>               
+                            <strong>{{ realisateur.nom }}{{ realisateur.prenom }}</strong>               
                             <br>Date de Naissance : {{ realisateur.dateDeNaissance }}<br />
 							<br />
 							<p>{{ realisateur.description }}</p>
 							<hr />
 							<div class="text-right">
-								<a href="" class="btn btn-success">Voir ses films</a>
+								<a href="{{ path('page_realisateur', {'id': realisateur.id}) }}" class="btn btn-success">Voir ses films</a>
 							</div>
 						</div>
 						    {% endfor %}
