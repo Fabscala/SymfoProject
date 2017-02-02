@@ -287,4 +287,26 @@ class Realisateur extends \SymfoProjectGit\CinemaBundle\Entity\Realisateur imple
         return parent::getDateDeNaissance();
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    public function setFilms($films)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setFilms', [$films]);
+
+        return parent::setFilms($films);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getFilms()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFilms', []);
+
+        return parent::getFilms();
+    }
+
 }

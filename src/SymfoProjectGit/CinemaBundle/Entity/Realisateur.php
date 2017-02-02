@@ -166,5 +166,29 @@ class Realisateur
     {
         return $this->dateDeNaissance;
     }
+
+    /**
+     * Set films
+     *
+     * @param string $films
+     *
+     * @return Realisateur
+     */
+    public function setFilms($films)
+    {
+        $this->films = $films;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return array
+     */
+    public function getFilms()
+    {
+        return $this->films;
+    }
 }
 
