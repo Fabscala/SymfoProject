@@ -10,14 +10,26 @@
                     </div>
                 </div>
                 <div class="col-md-9">
-                	
                     <div class="well">
                             <strong>{{ realisateurs.nom }}  {{ realisateurs.prenom }}</strong>               
                             <p class="pull-right">Date de Naissance : {{ realisateurs.dateDeNaissance }}</p><br />
-                            {% for films in realisateurs %}
-                            <br>Liste de ses Films : {{ realisateurs.films }}{{ films.titre }}<br />
+                            <br>Liste de ses Films :<br />
+                            <br>
+                            {% for film in films %}
+                                <div class="thumbnail">
+                                    <div class="caption-full">
+                                        <h4 class="pull-right">{{ film.genre }}</h4>
+                                        <h4>{{ film.titre }}</h4>
+                                        <p>{{ film.synopsis }}</p>
+                                    </div>
+                                <div class="ratings">
+                                    <p class="pull-right">{{ film.getDate() }}</p>
+                                    <br>    
+                                </div>
+                    </div>
                             {% endfor %}
-                	</div>
+
                 </div>
+            </div>
             </div>
         {% endblock %}

@@ -58,6 +58,14 @@ class Film
 
 
     /**
+    * Lorsqu'on appelle $film.realisateur dans TWIG
+    */
+    public function __toString(){
+        return $this->realisateur;
+    }
+
+
+    /**
      * Get id
      *
      * @return int
